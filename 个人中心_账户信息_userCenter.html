@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>欢迎光临博纳忧品网</title>
+    <link href="css/images/ico.ico" type="image/x-icon" rel="icon">
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/userCenter.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="js/header.js"></script>
+    <!-- 主体内容开始 -->
+    <div class="bgColorGray">
+        <div class="w userCenterBox  clearFix">
+            <div class="userCenterBox_l">
+                <dl class="userCenterNav userCenterNav_first">
+                    <dt class="fs18">订单中心</dt>
+                    <dd><a href="#">我的订单</a></dd>
+                    <dd><a href="#">我的收藏</a></dd>
+                    <dd><a href="#">我的评价</a></dd>
+                    <dd><a href="#">我的退换货</a></dd>
+                </dl>
+                <dl class="userCenterNav">
+                    <dt class="fs18">账号中心</dt>
+                    <dd><a href="#">会员升级</a></dd>
+                    <dd><a href="#">邀请码生成器</a></dd>
+                    <dd><a href="#">账户信息</a></dd>
+                    <dd><a href="#">账户安全</a></dd>
+                    <dd><a href="#">积分</a></dd>
+                    <dd><a href="#">收货地址</a></dd>
+                </dl>
+                <dl class="userCenterNav">
+                    <dt class="fs18">客户服务</dt>
+                    <dd><a href="#">帮助中心</a></dd>
+                    <dd><a href="#">养护中心</a></dd>
+                    <dd><a href="#">意见建议</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+            </div>
+            <div class="userCenterBox_r">
+                <!-- 基本信息开始 --> <div class="userCenterTitle">
+                    <b class="textColorRed fs18 mr50">账户信息</b><span>个人信息完整度：<em class="textColorRed ml10">70%</em></span>
+                </div>
+                <!-- 基本信息结束 -->
+                <!-- 全部订单开始 -->
+                <div class="p30">
+                    <ul class="userInfoBox clearFix">
+                        <li class="left">
+                            <div class="userImgBox">
+                                <img alt="fas" src="css/images/userImg.jpg" />
+                            </div>
+                        </li>
+                        <li class="center">
+                            <p class="userId">个人账户：1321313213</p>
+                            <p class="experience">经验值：<span class="progressBar"><em style="width: 50%;"></em></span></p>
+                            <p class="fs12">手机：<span class="textColorRed">13816676123</span></p>
+                        </li>
+                        <li class="right">
+                            <p class="userLevel"><i class="icon_userCenter"></i><span>VIP贵宾</span></p>
+                            <p>我的积分：<span>6000</span></p>
+                        </li>
+                    </ul>
+                    <ul class="userOtherInfoBox clearFix">
+                        <li class="left">
+                            <h2 class="textColor000 fs16">基本信息</h2>
+                            <div class="mt20">
+                                <label>昵称：</label><input type="text" class="input_text" />
+                            </div>
+                            <div class="mt20">
+                                <label>性别：</label><label><input type="radio" />&nbsp;男</label><label class="ml20"><input type="radio" />&nbsp;女</label>
+                            </div>
+                            <div class="mt20 chooseDateBox clearFix">
+                                <label class="fl mt5">生日：</label>
+                                <div class="input_text_box">
+                                    <input type="text" onclick="WdatePicker()" class="input_text">
+                                    <i class="icon"></i>
+                                </div>                                
+                            </div>
+                            <p class="textColorGray fs12 mt5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生日保存后无法修改</p>
+                        </li>
+                        <li class="right">
+                            <h2 class="textColor000 fs16">上传头像</h2>
+                            <a class="mt20 btnCancel" href="javascript:;">选择您要上传的头像</a>
+                            <p class="textColorGray fs12 mt5">仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于1M</p>
+                        </li>
+                    </ul>
+                    <div class="txt_center mt20">
+                        <a class="btnCancel" href="javascript:;">保存</a>
+                    </div>
+                </div>
+                <!-- 全部订单结束 -->
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+    <script src="js/footer.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/common.js"></script>
+    <script src="plugins/My97DatePicker/WdatePicker.js"></script>
+</body>
+</html>

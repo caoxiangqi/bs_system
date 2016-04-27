@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>欢迎光临博纳忧品网</title>
+    <link href="css/images/ico.ico" type="image/x-icon"  rel="icon">
+    <link href="css/common.css" rel="stylesheet" />
+</head>
+<body>
+    <div class=" headerBar"> 
+        <!-- 头部菜单开始 -->
+        <div class="w clearFix">
+            <a class="headerBar_l" href="javascript:;"><i class="icon"></i>收藏BONAUPIN</a>
+            <ul class="headerBar_r">
+                <li>欢迎光临BONAUPIN</li>
+                <li><a href="javascript:;">请登录</a></li>
+                <li class="bnt_regist"><a class="headerBar_line " href="javascript:;">免费注册</a></li>
+                <li><a href="个人中心_userCenter.html">我的订单</a></li>
+                <li class="kw">
+                    <a class="headerBar_line" href="javascript:;"><i class="icon"></i>客户服务</a>
+                    <dl>
+                        <dd><a href="javascript:;">养护中心</a></dd>
+                        <dd><a href="javascript:;">帮助中心</a></dd>
+                        <dd><a href="javascript:;">投诉中心</a></dd>
+                        <dd class="kw_tel lastBottom">贵宾专线<br />
+                            400-87-56788</dd>
+                    </dl>
+                </li>
+                <li class="cart"><a href="javascript:;"><i class="icon"></i>购物车(88)</a></li>
+            </ul>
+        </div>
+        <!-- 头部菜单结束 -->
+    </div>
+    <!-- 主体内容开始 -->
+    <div class="w">
+        <h2 class="welCome">欢迎登录BONAUPIN</h2>
+    </div>
+    <div class="bgColorGray" style="background:url(css/images/wz_bg.jpg) top center no-repeat;">
+        <div class="w loginBox_bg clearFix" style="background:none;">
+            <div class="loginBox regestBox" style="margin-top:0;margin-bottom:0px;margin-right:50px;">
+                <!-- 错误提示时增加vShow -->
+                <div class="errorTipTxt vShow"><i></i>账户名与密码不匹配，请重新输入</div>
+                <div class="loginBox_item ">
+                    <label class="fl key">用户名：</label>
+                    <input type="tex
+                    t" class="input_text wz_val"  value="用户名：" /><span class="textColorGray ml10">手机或邮箱</span>
+                </div>
+                <div class="loginBox_item mt20 wz_pr" style="">
+                    <style>
+                    .wz_pr{position:relative;}
+                    .wz_pa{position: absolute;left: 110px;top: 10px;color: #aaa;font-size: 12px;font-family: 宋体;" class="wz_mm_sp}
+                    </style> 
+                    <label class="fl key">密码：</label>
+                    <input type="password pw" class="input_text" />
+                    <span class="wz_mm_sp wz_pa">密码测试</span>
+
+                </div>
+                <div class="loginBox_item mt20">
+                    <label class="fl key">确认密码：</label>
+                    <input type="text" class="input_text wz_val" placeholder="用户名：" />
+                </div>
+                <div class="loginBox_item mt20">
+                    <label class="fl key">验证手机：</label>
+                    <input type="text" class="input_text" /><span class="textColorGray ml10">或邮箱验证</span>
+                </div>
+                <div class="loginBox_item mt20">
+                    <label class="fl key">短信验证码：</label>
+                    <input type="text" class="input_text checkCodeW mr20" /><a class="btn_getPhoneCode" href="javascript:;">获取短信验证码</a>
+                </div>
+                <div class="loginBox_item mt20">
+                        <label class="fl key">会员邀请码</label>
+                        <input type="text" class="input_text wz_val" name="inviteCode" id="inviteCode" onblur="regValidata(this)" validate="required:false;min:0;max:50;" value="如有邀请码请输入">
+                                <span class="wz_pa wz_mm_sp" style="display: none;">如有邀请码请输入</span>
+                    </div>
+                <div class="loginBox_item mt5">
+                    <label class="fl key">&nbsp;</label>
+                    <input type="text" class="input_text wz_val" name="inviteCode" id="inviteCode" style="display: none;"
+                               disabled onblur='regValidata(this)' validate="required:true;min:6;max:50;" value="邀请码不能为空" />
+
+                </div>
+                <a class="btnRed mt20" href="javascript:;">立即注册</a>
+                <div class="loginBox_otherBtns ">
+                    <label class="fs11 textColorGray ">
+                        <input type="checkbox" checked="checked"><span class="vm ml5">我已阅读并同意《BONAUPIN网用户注册协议》</span>
+                    </label>
+                </div>
+                <div class="loginBox_otherBtns  ">
+                    <label class="fl textColorGray">已经是BONAUPIN会员？<a class="textColorRed" href="javascript:;">立即登录</a> </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+    <script src="js/footer.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+     // onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" 
+    $(function(){
+        $(".wz_val").focus(function(){
+            if(this.value==this.defaultValue){this.value='';}
+        });
+        $(".wz_val").blur(function(){
+            if(this.value==''){this.value=this.defaultValue;}
+        });
+
+      
+        
+            $(".wz_mm_sp").prev().click(function(){
+                $(this).next().hide();
+                $(this).focus();
+            });
+            $(".wz_mm_sp").prev().blur(function(){
+                if($(this).val()==''){
+                    $(this).next().show();    
+                }
+            });
+            $(".wz_mm_sp").click(function(){
+                $(this).hide();
+                $(this).prev().focus();
+            });
+        });
+
+
+        // $("#inviteCodeCheckbox").click(function() {
+        //     if($(this).prop("checked")){
+        //         $("#inviteCode").show();
+        //         $("#inviteCode").attr("disabled", false);
+        //     }else{
+        //         $("#inviteCode").hide();
+        //         $("#inviteCode").attr("disabled", true);
+        //     }
+        // });
+
+    </script>
+    <script type="text/javascript">
+//密码确认
+function confirmPw() {
+    $("#password-confirm").next(".errorTipTxt").html("").removeClass("vShow");
+    isvShow($("#password-confirm").next(".errorTipTxt"))
+    if(!regValidata($('#password-input'))){
+        return false;
+    }
+    var passwordVal = $("#password").val();
+    var passwordConf = $("#passwordConf").val();
+    if (passwordConf != passwordVal) {
+        $("#password-confirm").next(".errorTipTxt").html("<i></i>"+message("mall.reg.validate.passwordConfirm")).addClass("vShow");
+        return false;
+    }
+}
+//服务条款
+$("#regCheck").click(function(){
+    //选中
+    if($(this).prop("checked")){
+        $(".registerClass").removeClass("btnRed_enabled").attr("href","javascript:registerSbmit();");
+    }else{
+        $(".registerClass").addClass("btnRed_enabled").attr("href","javascript:;");
+    }
+});
+
+$("#inviteCodeCheckbox").click(function() {
+    if($(this).prop("checked")){
+         $("#inviteCode").show();
+        $("#inviteCode").attr("disabled", false);
+    }else{
+        $("#inviteCode").val("");
+        $("#inviteCode").hide();
+        $("#inviteCode").attr("disabled", true);
+    }
+});
+//发送验证码
+function sendCheckCode() {
+
+    if(regValidata($('#accout-input'))){
+    if(regValidata($('#phoneNum-input'))){
+        var $username = $("input[name=regAccout]");
+        var $phone = $("input[name=regPhone]");
+        $.ajax({
+            url: "/web.mall/register/checTel.aj",
+            type: "POST",
+            data: {
+                account: $phone.val(),
+            },
+            dataType: "json",
+            cache: false,
+            success: function(result) {
+                if(result.status=="1"){//已被使用
+                       $("#regErr_span1").show();
+                       $("#regErr_span1").html(result.message);
+                       $("#regErr_span1").addClass('vShow');
+                       return;
+                }else{//未被使用
+                    $("#regErr_span1").hide();
+                    $("#regErr_span1").html();
+                    $("#regErr_span1").removeClass('vShow');
+                
+        
+        $.ajax({
+            url: "/web.mall/common/sendCheckCode.aj",
+            type: "POST",
+            data: {
+                account: $phone.val(),
+                type:'register'
+            },
+            dataType: "json",
+            cache: false,
+            success: function(result) {
+                if(result.status=="0") {
+                    var btn_getPhoneCode = $(".btn_getPhoneCode"),
+                            second = 60,
+                            timer = null;
+                    var nowTxt_btn = btn_getPhoneCode.text();
+                    if (nowTxt_btn == "获取短信验证码") {
+                        btn_getPhoneCode.text("60秒后可重新获取").addClass("btn_aTxtEnabled");
+                        timer = setInterval(function () {
+                            second--;
+                            btn_getPhoneCode.text(second + "秒后可重新获取");
+                            $("#getPhoneCode").attr("href","javascript:void(0);");
+                            if (second == 0) {
+                             $("#getPhoneCode").attr("href","javascript:sendCheckCode();");
+                                clearInterval(timer);
+                                btn_getPhoneCode.text("获取短信验证码").removeClass("btn_aTxtEnabled");
+                                second = 60;
+                            }
+                        }, 1000);
+                    }
+                    yfTip(1,"发送成功!");
+                    $("#regErr_span").hide();
+                    $("#regErr_span").html();
+                    $("#regErr_span").removeClass('vShow');
+                } else {
+                    $("#regErr_span").show();
+                    $("#regErr_span").html(result.message);
+                    $("#regErr_span").addClass('vShow');
+                }
+            }
+        });
+        
+        
+        
+        
+             }
+            }
+        });
+        
+        }
+    }
+}
+
+//注册验证
+function forgetPwSbmit() {
+    if(regValidata($('#forgetPw-form'))){
+        $(".errorTipTxt").html("");
+        var $username = $("input[name=accout]");
+        var $checkCode = $("input[name=checkCode]");
+        
+    }
+}
+//注册提交
+function registerSbmit() {
+    var passwordVal = $("#password").val();
+    var passwordConf = $("#passwordConf").val();
+    if (passwordConf != passwordVal) {
+        $("#password-confirm").next(".errorTipTxt").html("<i></i>"+message("mall.reg.validate.passwordConfirm")).addClass("vShow");
+        isvShow($("#password-confirm").next(".errorTipTxt"));
+    }else{
+     if(regValidata($('#register-form'))){
+        $(".errorTipTxt").html("");
+        var $username = $("input[name=regAccout]");
+        var $password = $("input[name=regPassword]");
+        var $phoneNum = $("input[name=regPhone]");
+        var $checkCode = $("input[name=checkCode]");
+        var $inviteCode = $("#inviteCode");
+        var $phone = $("input[name=regPhone]");
+        $.ajax({
+            url: "/web.mall/common/checkCode.aj",
+            type: "POST",
+            data: {
+                account: $phone.val(),
+                type:'register',
+                checkCode: $checkCode.val()
+            },
+            dataType: "json",
+            cache: false,
+            success: function(result) {
+                if(result.status=="0") {
+                    $.ajax({
+                        url: "/web.mall/register/submit.aj",
+                        type: "POST",
+                        data: {
+                            username: $username.val(),
+                            password: $password.val(),
+                            phoneNum: $phoneNum.val(),
+                            inviteCode: $inviteCode.val()
+                        },
+                        dataType: "json",
+                        cache: false,
+                        success: function(result) {
+                            if(result.status=="0") {
+                                var returnUrl = "/web.mall/";
+                                location.href = returnUrl;
+                            } else {
+                                if(result.message=='邀请码不可用'){
+                                    $("#regErr_span").show();
+                                    $("#regErr_span").html(result.message);
+                                    $("#regErr_span").addClass('vShow');
+                                }else{
+                                    $("#regErr_span1").show();
+                                    $("#regErr_span1").html(result.message);
+                                    $("#regErr_span1").addClass('vShow');
+                                }
+                                
+                            }
+                        }
+                    });
+                } else {
+                    $checkCode.parent().next(".errorTipTxt").html("<i></i>"+message(result.message)).addClass("vShow");
+                    isvShow($checkCode.parent().next(".errorTipTxt"));
+                    //$("#regErr_span").html(result.message);
+                    //$("#regErr_span").addClass('vShow');
+                }
+            }
+        });
+      }
+    }
+}
+
+function isvShow(obj){
+    var id = $(obj).attr("id");
+    if (id == "regErr_span" || id == "regErr_span1") {
+        if ($(obj).hasClass("vShow")){
+            $(obj).show();
+        } else {
+            $(obj).hide();
+        }
+    }
+}
+
+function regValidata(obj) {
+    // 找出需要验证的元素
+    var $inputs = obj.find("input[validate]");
+    var errorCount = 0;
+    if ($inputs.length > 0) {
+        for (var i=0;i<$inputs.length;i++) {
+            var $ite = $inputs.eq(i);
+            if(!$($ite).attr('disabled')) {
+                var validataArr = $ite.attr("validate").split(";");
+                if (($ite.attr("validate").indexOf("premise")) < 0 ) {
+                    $ite.removeClass("inputError");
+                    $ite.closest(".loginBox_item").next(".errorTipTxt").html("").removeClass("vShow");
+                    isvShow($ite.closest(".loginBox_item").next(".errorTipTxt"));
+
+                }
+                // 多组校验值
+                if (validataArr.length > 1) {
+                    for (var s=0;s<validataArr.length;s++) {
+                        var valis = validataArr[s];
+                        if(!validataVal(valis,$ite)) {
+                            errorCount++;
+                            break;
+                        }
+                    }
+                } else {
+                    if(!validataVal(validataArr[0],$ite)) {
+                        errorCount++;
+                    }
+                }
+            } else {
+                $ite.removeClass("inputError");
+                $ite.closest(".loginBox_item").next(".errorTipTxt").html("").removeClass("vShow");
+                isvShow($ite.closest(".loginBox_item").next(".errorTipTxt"));
+            }
+        }
+    }
+    if (errorCount > 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+//校验属性值
+function validataVal(valiRule,$ite) {
+    var v = valiRule.split(":"),
+        iteVal = ($ite.val() == null||$ite.val() == "undefined") ? "" : $ite.val().replace(/\s+/g,""),
+        $msgSpan = $ite.closest(".loginBox_item").next(".errorTipTxt");
+    var flag = true;
+    if (v.length > 1) {
+        var validataName = v[0].replace(/\s+/g,""); //校验类型
+        var validataVal = v[1].replace(/\s+/g,""); //校验规则
+        var msgIndex = "mall.reg.validate.";
+        // 空校验，长度校验，非法字符
+        if (validataName == "required" && validataVal == "true" && iteVal == "") {
+            var msgShow = msgIndex + $ite.attr("name") + ".required";
+            $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+            isvShow($msgSpan);
+            flag = false;
+        } else if (validataName == "max" && $.isNumeric(validataVal) && iteVal.length > parseInt(validataVal)) {
+            var msgShow = msgIndex + $ite.attr("name") + ".max";
+            $msgSpan.html("<i></i>"+message(msgShow).replace("#",validataVal)).addClass("vShow");
+            isvShow($msgSpan);
+            flag = false;
+        } else if (validataName == "min" && $.isNumeric(validataVal) && iteVal.length < parseInt(validataVal)) {
+            var msgShow = msgIndex + $ite.attr("name") + ".min";
+            $msgSpan.html("<i></i>"+message(msgShow).replace("#",validataVal)).addClass("vShow");
+            isvShow($msgSpan);
+            flag = false;
+        } else if (validataName == "illegal" && validataVal == "false" && !is_forbid(iteVal)) {
+            var msgShow = msgIndex + $ite.attr("name") + ".illegal";
+            $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+            isvShow($msgSpan);
+            flag = false;
+        } else if (validataName == "format") {
+            if (iteVal != "" ) {
+                if (validataVal == "mobile" && !check_mobile(iteVal)) {
+                    var msgShow = msgIndex + "mobileFormat";
+                    $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+                    isvShow($msgSpan);
+                    flag = false;
+                } else if (validataVal == "phone" && !checkPhone(iteVal)) {
+                    var msgShow = msgIndex + "phoneFormat";
+                    $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+                    isvShow($msgSpan);
+                    flag = false;
+                } else if (validataVal == "email" &&!check_email(iteVal)) {
+                    var msgShow = msgIndex + "emailFormat";
+                    $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+                    isvShow($msgSpan);
+                    flag = false;
+                } else if (validataVal == "password" &&!check_password(iteVal)) {
+                    var msgShow = msgIndex + "passwordFormat";
+                    $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+                    isvShow($msgSpan);
+                    flag = false;
+                } else if (validataVal == "username" && (!is_forbid(iteVal)||!check_username(iteVal))) {
+                    var msgShow = msgIndex + "regAccout.illegal";
+                    $msgSpan.html("<i></i>"+message(msgShow)).addClass("vShow");
+                    isvShow($msgSpan);
+                    flag = false;
+                }
+            } 
+        }
+    }
+    return flag;
+}
+
+$(function(){
+    $(".wz_val").focus(function(){
+        if(this.value==this.defaultValue){this.value='';}
+    });
+    $(".wz_val").blur(function(){
+        if(this.value==''){this.value=this.defaultValue;}
+    });
+    $(".wz_mm_ip").focus(function(){
+        $(this).next().hide();
+        $(this).focus();
+    });
+    $(".wz_mm_ip").blur(function(){
+        if($(this).val()==''){
+            $(this).next().show();
+        }
+    });
+    $(".wz_mm_sp").prev().click(function(){
+        $(this).next().hide();
+        $(this).focus();
+    });
+    $(".wz_mm_sp").prev().blur(function(){
+        if($(this).val()==''){
+            $(this).next().show();
+        }
+    });
+    $(".wz_mm_sp").click(function(){
+        $(this).hide();
+        $(this).prev().focus();
+    });
+
+});
+</script>
+
+
+
+</body>
+</html>

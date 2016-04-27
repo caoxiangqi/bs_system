@@ -1,0 +1,80 @@
+﻿    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>欢迎光临博纳忧品网</title>
+    <link href="css/images/ico.ico" type="image/x-icon" rel="icon">
+    <link href="css/common.css" rel="stylesheet" />
+</head>
+<body>
+    <div class=" headerBar">
+        <!-- 头部菜单开始 -->
+        <div class="w clearFix">
+            <a class="headerBar_l" href="javascript:;"><i class="icon"></i>收藏BONAUPIN</a>
+            <ul class="headerBar_r">
+                <li>欢迎光临BONAUPIN</li>
+                <li><a href="javascript:;">请登录</a></li>
+                <li class="bnt_regist"><a class="headerBar_line " href="javascript:;">免费注册</a></li>
+                <li><a href="个人中心_userCenter.html">我的订单</a></li>
+                <li class="kw">
+                    <a class="headerBar_line" href="javascript:;"><i class="icon"></i>客户服务</a>
+                    <dl>
+                        <dd><a href="javascript:;">养护中心</a></dd>
+                        <dd><a href="javascript:;">帮助中心</a></dd>
+                        <dd><a href="javascript:;">投诉中心</a></dd>
+                        <dd class="kw_tel lastBottom">贵宾专线<br />
+                            400-87-56788</dd>
+                    </dl>
+                </li>
+                <li class="cart"><a href="javascript:;"><i class="icon"></i>购物车(88)</a></li>
+            </ul>
+        </div>
+        <!-- 头部菜单结束 -->
+    </div>
+    <!-- 主体内容开始 -->
+    <div class="w">
+         <h2 class="welCome" style="padding: 45px 0 25px 80px;">欢迎登录<a href="首页_index.html">BONAUPIN</a></h2>
+    </div>
+    <div class="bgColorGray" style="background:url(css/images/wz_bg.jpg) top center;padding:100px 0;">
+        <div class="w clearFix">
+            <!-- <a class="loginBox_bg" title="去首页" href="首页_index.html">&nbsp;</a> -->
+            <div class="loginBox" style="margin-right:60px;">
+                <h2 class="loginBox_title textColorRed">欢迎登录</h2>
+                <!-- 错误提示时增加vShow -->
+                <div class="errorTipTxt vShow"><i></i>账户名与密码不匹配，请重新输入</div>
+                <div class="loginBox_item">
+                    <label class="fl key">用户名：</label>
+                    <input type="text" class="input_text" />
+                </div>
+                <div class="loginBox_item mt20">
+                    <label class="fl key">密码：</label>
+                    <input type="password" class="input_text" />
+                </div>
+                <div class="mt5 clearFix">
+                    <label class="fl key">&nbsp;</label>
+                    <label>
+                        <input type="checkbox" checked="checked">&nbsp;&nbsp;记住密码</label>
+                </div>
+                <a class="btnRed" href="javascript:;">立即登录</a>
+                <div class="loginBox_otherBtns ">
+                    <label class="fl">不是BONAUPIN会员？<a class="textColorRed" href="javascript:;">立即注册</a> </label>
+                    <a class="fr" href="javascript:;">忘记密码？</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+    <script src="js/footer.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/common.js"></script>
+    <script src="plugins/ruixue_min.js"></script>
+    <script>
+        $(function () {
+            $(".btnRed").click(function () {
+                Global.ruixue.tip({ inputs: ".input_text", speed: 1000, tipTxt: "不能为空", textAlign: "right" });
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>欢迎光临博纳忧品网</title>
+    <link href="css/images/ico.ico" type="image/x-icon" rel="icon">
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/userCenter.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="js/header.js"></script>
+    <!-- 主体内容开始 -->
+    <div class="bgColorGray">
+        <div class="w userCenterBox  clearFix">
+            <div class="userCenterBox_l">
+                <dl class="userCenterNav userCenterNav_first">
+                    <dt class="fs18">订单中心</dt>
+                    <dd><a href="#">我的订单</a></dd>
+                    <dd><a href="#">我的收藏</a></dd>
+                    <dd><a href="#">我的评价</a></dd>
+                    <dd><a href="#">我的退换货</a></dd>
+                </dl>
+                <dl class="userCenterNav">
+                    <dt class="fs18">账号中心</dt>
+                    <dd><a href="#">会员升级</a></dd>
+                    <dd><a href="#">邀请码生成器</a></dd>
+                    <dd><a href="#">账户信息</a></dd>
+                    <dd><a href="#">账户安全</a></dd>
+                    <dd><a href="#">积分</a></dd>
+                    <dd><a href="#">收货地址</a></dd>
+                </dl>
+                <dl class="userCenterNav">
+                    <dt class="fs18">客户服务</dt>
+                    <dd><a href="#">帮助中心</a></dd>
+                    <dd><a href="#">养护中心</a></dd>
+                    <dd><a href="#">意见建议</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+            </div>
+            <div class="userCenterBox_r">
+                <!-- 基本信息开始 -->
+                <div class="userCenterTitle ">
+                    <b class="textColorRed fs18 mr50">收货地址</b><span>全部<em class="textColorRed ml10">3</em></span>
+                </div>
+                <!-- 基本信息结束 -->
+                <!-- 收货地址开始 -->
+                <div class="p30 myAdd">
+                    <a class="btnCancel myAdd_btnCAncel" href="javascript:;">新增收货地址</a><span class="ml20">您已创建3 个收货地址，最多可创建20个</span>
+                    <div class="myAdd_item myAdd_edit clearFix">
+                        <div class="fl">
+                            <div>
+                                <label class="key"><span class="textColorRed">*</span>收货人姓名：</label><input id="tes1" class="input_text" type="text" />
+                            </div>
+                            <div class="mt15 ">
+                                <label class="key"><span class="textColorRed">*</span>手机号码：</label><input id="tes2" class="input_text" type="text" />
+                            </div>
+
+                        </div>
+                        <div class="fl">
+                            <div>
+                                <label class="key">邮政编码：</label><input class="input_text" type="text" />
+                            </div>
+                            <div class="mt15">
+                                <label class="key">电话号码：</label><input class="input_text" style="width: 20px;" type="text" />-<input class="input_text" style="width: 80px;" type="text" />
+                            </div>
+
+                        </div>
+                        <div class="clear"></div>
+                        <div class="mt15 item_selectBox">
+                            <label class="key"><span class="textColorRed">*</span>所在地区：</label>
+                            <select>
+                                <option>选项一</option>
+                                <option>选项一</option>
+                            </select>
+                            <select class="ml10">
+                                <option>选项一</option>
+                                <option>选项一</option>
+                            </select>
+                            <select class="ml10">
+                                <option>选项一</option>
+                                <option>选项一</option>
+                            </select>
+                            <select class="ml10">
+                                <option>选项一</option>
+                                <option>选项一</option>
+                            </select>
+                        </div>
+                        <div class="mt15">
+                            <label class="key"><span class="textColorRed">*</span>详细地址：</label><input class="input_text width559" />
+                        </div>
+                        <div class="mt20 txt_center">
+                            <label class="setNormal">
+                                <input type="checkbox" />&nbsp;设为默认</label>
+                            <a class="btnOk" href="javascript:;">保存</a>
+                            <a class="btnCancel ml10" href="javascript:;">取消</a>
+                        </div>
+                    </div>
+                    <div class="myAdd_item ">
+                        <b>苟宇昆高新技术产业开发区</b>
+                        <p>收货人： 苟宇昆</p>
+                        <p>所在地区： 山西太原市小店区高新技术产业开发区</p>
+                        <p>地址： 高新区创业街方大创新园6号楼1402室</p>
+                        <p>手机： 187****8532</p>
+                        <p>固定电话： 0351-560****</p>
+                        <div class="btns"><a class="btn_aTxtBlue" href="javascript:;">设为默认</a><a class="btn_aTxtBlue ml10" href="javascript:;">删除</a><a class="btn_aTxtBlue ml10" href="javascript:;">编辑</a></div>
+                    </div>
+                </div>
+                <!-- 收货地址结束 -->
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+    <script src="js/footer.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/common.js"></script>
+    <script src="plugins/My97DatePicker/WdatePicker.js"></script>
+    <script src="plugins/ruixue.js"></script>
+    <script>
+        $(function () {
+            $(".btnOk").click(function () {
+                //Global.ruixue.tip({ inputs: "#tes1,#tes2", speed: 1000, tipTxt: "不能为空,填写错误",callBack:function(){alert("好的，执行完成后");} });
+                Global.ruixue.dialog(1, "添加成功！");
+            });
+        })
+    </script>
+</body>
+</html>

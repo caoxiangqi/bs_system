@@ -1,0 +1,426 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>万能热区</title>
+<link rel="stylesheet" href="css/extra.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="css/tools.css" />
+<link rel="stylesheet" href="css/default1.css" />
+<style type="text/css"></style>
+</head>
+<body>
+<div id="w990" style="height:720px;overflow:auto;">
+	<!-- <div id="site-header">
+
+	</div> -->
+	<div class="ruler"></div>
+	<div class="zidingyi">
+		<div class="zgc-tools">
+			<div class="zgc-btns">
+				<!-- <span id="J_import">导入</span> -->
+				<span id="J_export" class="J_btn_A">保存</span>
+				<span class="btn-preview">
+				<form action="Pictrue/preview/index.htm" method="post" target="_blank">
+					<input type="hidden" name="preCode" value="" />
+					<input type="submit" value="预览" id="J_preview"/>
+				</form>
+				</span>
+				<span id="J_upstate">收起</span><span id="J_reset">清空</span></div>
+			<div class="zgc-widgets clearfix">
+				<ul>
+					<li id="J_bgimg"><em></em>背景图</li>
+					<li id="J_hotArea"><em></em>热区</li>
+				</ul>
+			</div>
+			<div class="zgc-attrib clearfix">
+				<div id="J_bgimg_attrib" class="zgc-attlist">
+					<div class="zgc-attnav">
+						<li class="nav-selected">背景图设置</li>
+					</div>
+					<div class="zgc-attcnt">
+						<div class="set-inner">
+							<div class="control-group">
+								<label class="control-label">导入图片</label>
+								<div class="control">
+									<input class="input-box midlong" type="text" autocomplete="off" name="backbg" value="" /> 
+									<!--<input class="input-box midlong" id="file_o" type="file" autocomplete="off" name="backbg" value="" />  -->
+									<span class="tips">
+									<input class="btn-ok" type="button" value="确定" />
+									</span> <span class="zgtips">模块尺寸为背景图片尺寸</span> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="J_hotArea_attrib" class="zgc-attlist">
+					<ul class="zgc-attnav">
+						<li class="nav-selected">热区设置</li>
+						<li>坐标设置</li>
+					</ul>
+					<div class="zgc-attcnt">
+						<div class="set-inner">
+							<div class="control-group">
+
+							</div>
+							<div class="control-group">
+								<label class="control-label">打开方式</label>
+								<div class="control">
+									<div class="rc-box">
+										<label>
+											<input type="checkbox" name="openstyle" value="_blank" checked="checked">
+											新窗口</label>
+									</div>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">链接地址</label>
+								<div class="control">
+									<input class="input-box" type="text" autocomplete="off" name="url" value="http://www.taobao.com">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">鼠标移入文字</label>
+								<div class="control">
+									<input class="input-box" type="text" autocomplete="off" name="title" value="">
+									<span class="zgtips">鼠标移动到链接上显示的标题文字,留空不显示</span> </div>
+							</div>
+						</div>
+						<div class="set-inner" style="display:none;">
+							<div class="control-group">
+								<label class="control-label">宽度</label>
+								<div class="control">
+									<input class="input-box" type="text" autocomplete="off" name="width" value="">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">高度</label>
+								<div class="control">
+									<input class="input-box" type="text" autocomplete="off" name="height" value="">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">距离左侧</label>
+								<div class="control">
+									<input class="input-box" type="text" autocomplete="off" name="left" value="">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">距离顶部</label>
+								<div class="control">
+									<input class="input-box" type="text" autocomplete="off" name="top" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container">
+			<div id="canvas" class="tshop-pbsm-shop-self-defined">
+				<img id="bg_0" src="images/sucai.jpg"/>
+			</div>
+		</div>
+		<div id="dialog" title="导出代码" style="display:none;">
+			<textarea cols="100" rows="10"></textarea>
+			<div style="margin-top:15px;text-align:right;"> <span id="msg_prompt">如果您的背景图片宽度超出950（天猫为990），请点击“添加全屏代码”</span> <span class="superbtn">
+				<button id="btns_super">添加全屏代码</button>
+				<button id="btns_undo">撤消全屏代码</button>
+				</span>
+				<button id="btns_copy">复制代码</button>
+			</div>
+		</div>
+		<div id="dialog_im" title="导入代码" style="display:none;">
+			<textarea cols="100" rows="10"></textarea>
+			<div style="margin-top:15px;text-align:right;"><span class="superbtn">
+				<button id="btns_impt">导入代码</button>
+				</span> </div>
+		</div>
+		<div id="export_depend" style="height:0px;overflow:hidden;visibility:hidden;">
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.9.1.js"></script> 
+<script src="js/jquery-ui.js"></script> 
+<script src="js/heyman.js"></script> 
+<script src="js/jquery.zclip.js"></script> 
+<script type="text/javascript" src="js/partner.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	var shop = {
+		'type'  : 950, // 'tm'代表天猫,'tb'代表淘宝,'dy'代表自定义
+		'is_fullscreen' : false,  //控制导入是否全屏开关
+        'background':
+		{
+			'width' : '950px',
+			'height': '665px',
+			'background-image' : 'url(../img03.taobaocdn.com/imgextra/i3/678976279/TB2Vl_MaVXXXXcuXXXXXXXXXXXX-678976279.jpg)',
+			'background-color' : '#ffffff',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center top',
+            'background-attachment':'scroll'
+		}
+	}
+
+	$('#J_bgimg').click(function(event){
+
+		$('#J_bgimg_attrib').css({'display':'block'}).siblings().css({'display':'none'});
+		$('#J_bgimg_attrib input[type="button"]').unbind().bind({
+			'click':function(){
+				var src = $('#J_bgimg_attrib input[name="backbg"]').val();
+				if(src != ''){
+					$("#bg_0").attr("src",src) ;
+
+					imgLoad(src, function(w, h){
+						shop['background']['width'] = w + 'px';
+						if(parseInt(w)>shop.type){shop.is_fullscreen = true;}else{shop.is_fullscreen = false;}
+                        shop['background']['height'] = h + 'px';
+                    });
+				}
+			}
+		});
+	});
+	$('#J_bgimg').click();
+
+
+	$('#J_hotArea').click(function(event){
+		var hotArea = new HotsArray();
+		Canvas.hotsArray.push(hotArea);
+		$('#J_hotArea_attrib .zgc-attnav li').each(function(index,value){
+			$(this).unbind().click(function(){
+				$(this).addClass('nav-selected').siblings().removeClass('nav-selected');
+				$('#J_hotArea_attrib .set-inner').eq(index).css('display','block').siblings().css('display','none');
+			});
+		});
+	});
+
+
+	$('#J_export').click(function(event){
+		dd_build();
+		$("#dialog").dialog({width:955});
+        dd_copy();
+        dd_super();
+		if(shop.is_fullscreen){
+			$('#btns_super').trigger('click');
+		}
+	});
+	$('#J_import').click(function(event){
+		$("#dialog_im").dialog({width:955});
+		dd_btn_imp();
+	});
+
+	$('#J_reset').click(function(event){
+		if (!confirm("确认要重置？")) {
+			return false;
+        }
+		$("#export_depend").html('<div class="wd_self_rel"><img src="../img04.taobaocdn.com/imgextra/i4/907349826/T23hOuXp4XXXXXXXXX-907349826.gif" /></div>');
+		dd_analyse();
+		$("#export_depend").html('');
+		$('#J_bgimg_attrib').css({'display':'block'}).siblings().css({'display':'none'});
+	});
+
+    /* 收缩和展开 */
+	$('#J_upstate').click(function(event){
+		var is_open = $(this).data("status")!==undefined ? $(this).data("status") : false;
+		if(!is_open){
+			$(this).html("展开").data("status", true).parent().siblings().css({'display':'none'});
+			is_open = true;
+		}else{
+			$(this).html("收起").data("status", false).parent().siblings().css({'display':'block'});
+			is_open = false;
+		}
+	});
+
+    /* 生成代码 */
+	function dd_build(){
+		var s_beg = '<div class="wd_self_rel" data-title="">';
+		var s_end = '</div>';
+		var s = dd_areaStr();;
+		for( var key in Canvas){
+			if(key == 'hotsArray'){continue;}
+			for( var i=0; i<Canvas[key].length; i++ ){
+				var t=Canvas[key][i]
+				s += t.getAreaHtml();
+			}
+		}
+		s = s_beg + s + s_end;
+		$("#dialog textarea").val(s);
+	}
+
+    /* 生成地图 */
+	function dd_areaStr(){
+		var img_src = $("#bg_0").attr("src");
+		//var s = BuildAreaStr();
+		var timestamp = new Date().getTime();
+		var s = '';
+		for( var i=0; i<Canvas.hotsArray.length; i++ ){
+			var t=Canvas.hotsArray[i]
+			s += t.getAreaHtml();
+		}
+
+		if(Canvas.hotsArray.length!==0){
+			s = '<img src="'+img_src+'" usemap="#Map_'+timestamp+'" /><map name="Map_'+timestamp+'">'+s+'</map>';
+		}else{
+			s = '<img src="'+img_src+'" />';
+		}
+		return s;
+	}
+
+    /* 复制代码 */
+	function dd_copy(){
+		$("#btns_copy").zclip('remove').zclip({
+			path: "js/ZeroClipboard.swf",
+			copy:function(){return $("#dialog textarea").val();},
+			beforeCopy:function(){
+				//$('.copyalert').text('请在文本框内全选复制代码使用（先[Ctrl + A]全选，再[Ctrl+C]复制）');
+			},
+			afterCopy:function(){
+
+			   $('#msg_prompt').text('复制成功,请粘贴到模板相应的位置');
+			   setTimeout(function(){$('#msg_prompt').text('');}, 5000);
+
+			}
+		});
+	}
+
+    /* 导入代码 */
+	function dd_btn_imp(){
+		$("#btns_impt").click(function(event){
+			var s = $("#dialog_im textarea").val();
+			$("#export_depend").html(s);
+			dd_analyse();
+			$("#dialog_im").dialog("close");
+			$("#export_depend").html('');
+		});
+	}
+
+    /* 导入分析 */
+	function dd_analyse(){
+		if(shop.is_fullscreen){
+			var o = $("#export_depend .wd_self_suspen1920 .wd_self_rel");
+		}else{
+			var o = $("#export_depend .wd_self_rel").eq(0);
+		}
+
+		for( var key in Canvas){
+			Canvas[key] = [];
+		}
+		$("#bg_0").siblings().each(function(){
+			if(this.nodeName.toLowerCase() != "img"){
+				$(this).remove();
+			}
+		});
+
+		o.children().each(function(i){
+			if(i==0 && this.nodeName.toLowerCase() == "img"){
+				$("#bg_0").attr("src",this.src);
+
+				imgLoad(this.src, function(w, h){
+					shop['background']['width'] = w + 'px';
+					if(parseInt(w)>shop.type){shop.is_fullscreen = true;}else{shop.is_fullscreen = false;}
+					shop['background']['height'] = h + 'px';
+				});
+			}
+			if(i==1 && this.nodeName.toLowerCase() == "map"){
+				$(this).children().each(function(j){
+					var coordinate = this.coords.split(',');
+					var hotArea = new HotsArray({
+						url:this.href,
+						title:this.title,
+						target:this.target,
+						width : parseInt(coordinate[2])-parseInt(coordinate[0]),
+						height : parseInt(coordinate[3])-parseInt(coordinate[1]),
+						left : parseInt(coordinate[0]),
+						top : parseInt(coordinate[1])
+					});
+					Canvas.hotsArray.push(hotArea);
+				});
+
+				$('#J_hotArea_attrib .zgc-attnav li').each(function(index,value){
+					$(this).unbind().click(function(){
+						$(this).addClass('nav-selected').siblings().removeClass('nav-selected');
+						$('#J_hotArea_attrib .set-inner').eq(index).css('display','block').siblings().css('display','none');
+					});
+				});
+			}
+		});
+	}
+
+    /* 生成全屏控制 */
+	function dd_super(){
+        var signal = false;
+        var obj_iput = $("#dialog textarea");
+        var str_star = '<div class="panelsdiv" style="height:'+ shop.background.height +';"><div class="sn-simple-logo footer-more-trigger" style="width:1920px;height:0px;left:50%;top:auto;border:none;padding:0;margin:0;line-height:1.5;"><div class="sn-simple-logo footer-more-trigger" style="width:1920px;height:0px;left:-960px;top:auto;border:none;padding:0;margin:0;line-height:1.5;"><table border="0" cellpadding="0" cellspacing="0" align="center"><tr><td>\n';
+        var str_ends = '\n</td></tr></table></div></div></div>';
+        var str_cont = obj_iput.val();
+        var str_comt = str_star + str_cont + str_ends;
+
+        $('#btns_undo').unbind().click(function(event){
+            if(signal){obj_iput.val( str_cont );signal = false;}
+        });
+        $('#btns_super').unbind().click(function(event){
+            if(!signal || /<div class="sn-simple-logo footer-more-trigger"[^>]*>/.test(str_cont)){
+                if(signal){$('#msg_prompt').text('');}
+                obj_iput.val( str_comt );
+                signal = true;
+				$('#msg_prompt').text('添加全屏代码成功！');
+				setTimeout(function(){$('#msg_prompt').text('');}, 2000);
+            }else{
+                $('#msg_prompt').text('已添加全屏代码，请不要重复添加！');
+				setTimeout(function(){$('#msg_prompt').text('');}, 2000);
+            }
+        });
+	}
+
+	$("form").submit(function(e){
+        var str_star = '<div class="wd_self_rel wd_self_suspen1920"><table border="0" cellpadding="0" cellspacing="0" align="center"><tr><td>\n';
+        var str_ends = '\n</td></tr></table></div>';
+		dd_build();
+		var html = str_star + $("#dialog textarea").val() + str_ends;
+		$('form input[name="preCode"]').val(html);
+		localStorage.setItem('html', html);
+	});
+
+	//预设代码选择
+	function preinstall(){
+		function QueryString(){
+			var aa = "dd";
+			var name,value,i;
+			var str=location.href;
+			var num=str.indexOf("?")
+			str=str.substr(num+1);
+			var arrtmp=str.split("&");
+			for(i=0;i < arrtmp.length;i++){
+				num=arrtmp[i].indexOf("=");
+				if(num>0){
+					name=arrtmp[i].substring(0,num);
+					value=arrtmp[i].substr(num+1);
+					this[name]=value;
+				}
+			}
+		}
+		var param = new QueryString();
+		switch(param['tool']){
+			case 'requ':
+				$("#export_depend").html('<div class="wd_self_rel"><img src="../img01.taobaocdn.com/imgextra/i1/907349826/T2C5k9XcBaXXXXXXXX_!!907349826.jpg" usemap="#Map_1383268354712" /><map name="Map_1383268354712"><area shape="rect" coords="442,150,552,563" href="#" target="_blank" title="" /><area shape="rect" coords="590,167,756,461" href="#" target="_blank" title="" /><area shape="rect" coords="88,35,236,645" href="" target="_blank" title="" /></map></div>');
+				dd_analyse();
+				$("#export_depend").html('');
+				$('#J_hotArea').addClass('outstand').siblings().removeClass('outstand');
+				break;
+			default:
+				break;
+		}
+	}
+	//preinstall();
+	// 跳转
+	$('#J_preview').click(function() {
+		location.href = "preview.html";
+	})
+
+});
+</script>
+</body>
+</html>

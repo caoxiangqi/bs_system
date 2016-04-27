@@ -1,0 +1,15 @@
+.tshop-pbsm-shop-self-defined .skin-box-hd{padding:0;}
+.tshop-pbsm-shop-self-defined .skin-box-bd{overflow:visible;}
+.tshop-pbsm-shop-self-defined .wd_disappear {display:none;}
+.tshop-pbsm-shop-self-defined .wd_self_rel {position:relative;}
+.tshop-pbsm-shop-self-defined .wd_self_abs {position:absolute;}
+.tshop-pbsm-shop-self-defined .wd_self_suspen1920 {width:1920px;left:-485px;}
+.expanded .grid-s5m0 .col-main .tshop-pbsm-shop-self-defined .skin-box-bd,
+.expanded .grid-m0s5 .col-main .tshop-pbsm-shop-self-defined .skin-box-bd {width:950px;}
+
+
+/* AB surface style */
+.tshop-pbsm-shop-self-defined .wd_hovimg {display:block;width:100%;height:100%;background-repeat:no-repeat;}
+.tshop-pbsm-shop-self-defined .wd_hovimg .con_img {display:block;vertical-align:middle;}
+.tshop-pbsm-shop-self-defined .wd_hovimg .con_img {opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)";transition:opacity 1s ease 0s;}
+.tshop-pbsm-shop-self-defined .wd_hovimg:hover .con_img {opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=100)";filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=100)";}

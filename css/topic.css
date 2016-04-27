@@ -1,0 +1,28 @@
+﻿.topic img { width: 565px; height: 250px; }
+.topic_ad img { width: 565px; height: 200px; }
+.topic .topic_ad2Limg { width: 416px; height: 309px; }
+.topic .topic_ad2Rimg { width: 713px; height: 309px; }
+.topic .topic_title2 { text-transform: uppercase; }
+.topic h4 { margin: 10px 0 1px; color: #000; }
+.topic_title { font-size: 36px; color: #3D3434; display: inline-block; *zoom: 1; *display: inline; padding: 0 20px; }
+.titleLineL, .titleLineR { display: inline-block; background: url(images/titleLineL.gif) no-repeat; width: 296px; height: 2px; vertical-align: top; margin-top: 20px; *zoom: 1; *display: inline; }
+.titleLineR { background: url(images/titleLineR.gif) no-repeat; }
+/*积分换礼楼层*/
+.topic .pListBox img { width: 150px; height: 150px; }
+.topic .latelyProList li { margin-right: 23px; height: 230px; }
+.topic .latelyProList img { width: 150px; height: 150px; border: 0; margin-left: 5px; }
+.topic .pName { color: #000; overflow: hidden; }
+.topic .pMoney span { font-size: 18px; }
+.topic .btnRed { height: 17px; line-height: 17px; padding: 0 10px; font-size: 12px; }
+.topic .latelyProList { padding: 10px 0 0; border-top: 1px solid #CFCFCF; overflow: hidden; }
+.topic .pListBox { position: relative; padding-left: 25px; width: 100%; }
+.topic .lineDown { padding: 30px; border: 0; }
+/*====================================优品课堂================================================*/
+.uPinClass_box { background: url(images/uPinClass_bg.png) no-repeat 50% 200px; height: 800px; position: relative; }
+.uPinClass_box .btn_backIndex { left: 642px; position: absolute; top: 330px; }
+/*====================================积分楼层轮播图重置================================================*/
+.topic .imgScroll { width: 1140px; }
+.topic .imgScroll_ul { height: 200px;height: 260px;width:2000px; }
+.topic .imgScroll_box { width: 1100px; height: 260px; }
+.topic .imgScroll_prev, .topic .imgScroll_next { width: 20px; text-align: center; font-size: 48px; margin-top: 82px; visibility: hidden; }
+.topic .hover .imgScroll_prev, .topic .hover .imgScroll_next { visibility: visible; }

@@ -1,0 +1,198 @@
+﻿.icon_userCenter { display: inline-block; overflow: hidden; background: url(images/icon_userCenter.gif) no-repeat; vertical-align: middle; margin-left: 5px; }
+.userCenterBox { width: 1046px; border: 77px solid #FFF; border-width: 33px 77px; background-color: #E7E7E7; }
+.userCenterBox_l { width: 134px; border-right: 35px solid #FFF; height: 100%; float: left; padding: 10px 32px; margin-right: -35px; }
+.userCenterBox_r { border-left: 35px solid #fff; margin-left: 198px; overflow: hidden; }
+/*左侧菜单*/
+.userCenterNav { width: 134px; overflow: hidden; border-top: 1px solid #969696; padding-top: 25px; margin-bottom: 10px; }
+.userCenterNav dt { height: 39px; padding: 0 5px; }
+.userCenterNav dd { height: 27px; padding: 0 21px; white-space: nowrap; }
+.userCenterNav dd a { color: #4E4E4E; }
+.userCenterNav_first { border: 0; }
+/*基本信息*/
+.userCenterBasic, .userCenterTitle { border-bottom: 16px solid #FFF; _float: left; _width: 100%; background-color: #FFF; }
+.userCenterBasic .l, .userCenterBasic .c, .userCenterBasic .r { height: 142px; float: left; padding: 16px 20px; background-color: #E7E7E7; }
+.userCenterBasic .l { width: 293px; margin-right: 5px; }
+.userCenterBasic .c { width: 195px; margin-right: 4px; _padding-bottom: 3px; }
+.userCenterBasic .r { width: 195px; }
+/*用户头像*/
+.userImgBox { float: left; width: 105px; margin-right: 30px; }
+.userImgBox img { width: 105px; height: 105px; margin-bottom: 24px; }
+.userId { height: 28px; margin: 18px 0 0 136px; text-align: center; }
+.userLevel { padding-left: 162px; margin-bottom: 13px; }
+.userLevel .icon_userCenter { width: 34px; height: 33px; background-position: 0 -275px; margin-right: 10px; }
+.userLevel .icon_userCenter_3 { background-position: 0 -243px; }
+.userLevel .icon_userCenter_2 { background-position: 0 -209px; }
+.userLevel .icon_userCenter_1 { background-position: 0 -175px; }
+/*进度条*/
+.progressBar { display: inline-block; width: 95px; height: 4px; background-color: #453C3F; _overflow: hidden; vertical-align: middle; }
+.progressBar em { display: inline-block; width: 100px; height: 4px; background-color: #70BA2B; float: left; }
+.experience { height: 37px; }
+/*验证邮箱*/
+.checkEmail { font-size: 12px; }
+.checkEmail .icon_userCenter { width: 26px; height: 19px; background-position: 0 -156px; margin-right: 2px; }
+/*待操作*/
+.waitWork { width: 97px; height: 80px; float: left; }
+.waitWork .icon_userCenter { width: 34px; height: 34px; margin: 0 0 10px 32%; _margin-left: 28px; }
+.waitWork .icon_userCenter2 { background-position: 0 -34px; }
+.waitWork .icon_userCenter3 { background-position: 0 -68px; }
+.waitWork .icon_userCenter4 { background-position: 0 -102px; }
+/*表格内图片*/
+.table .pListBox li { width: 77px; padding: 0; margin-right: -1px; }
+.table .pListBox img { width: 75px; height: 75px; border: 1px solid #E7E7E7; margin: 0; }
+.table .pListBox .btn_prev, .table .pListBox .btn_next { display: block; width: 15px; height: 30px; margin-top: -12px; }
+.table .pListBox .btn_prev { background: url(images/btn_prev_s.png) no-repeat; }
+.table .pListBox .btn_next { background: url(images/btn_next_s.png) no-repeat; right: -5px; }
+.table .pListBox { position: relative; padding-left: 10px; width: 100%; }
+.userCenterBox .table_nullRow td { background-color: #E7E7E7; }
+.table select { width: 90px; font-size: 12px; }
+/*评价行*/
+.tableAppraiseBox { border-top: 1px solid #E7E7E7; padding: 10px 0 0; }
+/*查看评价*/
+.evaluate_see { }
+/*=========================我的订单＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝======*/
+.userCenterTitle { background-color: #E7E7E7; border-bottom-width: 5px; padding: 30px; _padding: 30px 0; }
+.userCenterTitle span { padding: 0 20px; }
+.userCenterBox .btnRed { width: 80px; text-align: center; font-size: 14px; height: 23px; line-height: 23px; overflow: hidden; padding: 0; white-space: nowrap; }
+/*没有订单提示*/
+.noOrder { background: url(images/icon_cartNull.gif) no-repeat center 60%; height: 300px; }
+/*=========================我的收藏＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝======*/
+.collection table .pName img { width: 75px; height: 75px; border: 1px solid #E9E9E9; float: left; }
+.collection .pName { text-align: left; }
+.collection .pName p { margin-left: 90px; }
+.noCollection { background: url(images/icon_cartNull3.gif) no-repeat center 60% #FFF; height: 300px; }
+/*=========================我的评价＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝======*/
+.evaluate_tr1 li { float: left; }
+.evaluate_tr1 li.left { width: 65px; }
+.evaluate_tr1 li.center { width: 130px; line-height: 1; }
+.evaluate_tr1 li.right { width: 650px; }
+.evaluate_tr1 .labelEvaluate { margin: 0 20px 5px 0; }
+/*评价标签*/
+.labelEvaluate { line-height: 1; vertical-align: middle; display: inline-block; white-space: nowrap; word-break: break-all; cursor: pointer; }
+.labelEvaluate input { margin-right: 5px; }
+/*商品评价*/
+.evaluate_tr2 li { float: left; }
+.evaluate_tr2 li.left { width: 60px; }
+.evaluate_tr2 li.center { width: 312px; }
+.evaluate_tr2 li.center textarea { width: 290px; height: 105px; overflow: hidden; }
+.evaluate_tr2 li.right { width: 265px; padding-left: 45px; }
+.evaluate_tr2 li.right .btnCancel { height: 20px; line-height: 20px; padding: 0 8px; }
+/*用户晒图*/
+.evaluate_upImg li { float: left; width: 40px; height: 40px; position: relative; margin-right: 4px; }
+.evaluate_upImg li a { font-style: normal; color: #FF0000; position: absolute; top: -5px; right: 2px; }
+.evaluate_upImg img { width: 40px; height: 40px; background: #C6C6C6; }
+.aboutS label { vertical-align: middle; cursor: pointer; }
+.btn_more { color: #2C2C2C; display: inline-block; padding: 7px 20px; font-size: 16px; }
+.btn_more_up .icon { background-position: 0 -96px; }
+.btn_more .icon { height: 9px; margin-top: 8px; vertical-align: top; width: 9px; }
+/*=============================我的退换货==============================*/
+.changePImgBox { width: 77px; float: left; margin: 0 5px 5px 0; }
+.changePImgBox .btn_gary { width: 65px; margin: 5px 0 0; }
+.btn_gary_border { border-color: #FF0000; color: #FF0000; }
+.changePTab { border-bottom: 1px solid #FFF; margin-bottom: 5px; }
+.changePTab li.cur { border-bottom: 2px solid #e13335; height: 38px; }
+.changePTab li { float: left; font-weight: bold; height: 40px; line-height: 40px; margin: 0 11px; }
+.changePTab li.cur a { color: #43474A; }
+/*账户信息*/
+.userInfoBox { padding-left: 40px; border-bottom: 1px solid #B2B2B2; margin-bottom: 30px; }
+.userInfoBox li { float: left; width: 210px; }
+.userInfoBox .left { width: 135px; padding-left: 75px; }
+.userInfoBox .userId { margin: 0; text-align: left; }
+.userInfoBox .userLevel { padding: 0; }
+.userInfoBox .center { padding-top: 10px; }
+.userInfoBox .center p { height: 37px !important; }
+.userInfoBox .right { margin-top: 2px; }
+.userInfoBox .icon_userCenter { margin-left: 0; }
+.userOtherInfoBox { padding-left: 40px; }
+.userOtherInfoBox .left { width: 380px; float: left; }
+.userOtherInfoBox .right { width: 320px; float: left; }
+/*=============================账户安全==============================*/
+.userSafeBox { margin-top: 50px; border-top: 1px solid #FFF; }
+.userSafeBox .userSafe_li { padding: 0 105px; border-bottom: 1px solid #FFF; height: 75px; line-height: 75px; }
+.userSafe .icon_userCenter, .changeOk .icon_userCenter { display: inline-block; width: 22px; height: 22px; background-position: 0 -309px; vertical-align: text-bottom; margin-right: 5px; }
+.userSafe .notSafe { background-position: 0 -331px; }
+/*修改密码*/
+.changePW_ul { width: 340px; position: relative; left: 50%; margin-left: -165px; padding-top: 20px; }
+.changePW_ul dd { margin-top: 20px; }
+.changePW_ul dd .key { width: 70px; text-align: right; display: inline-block; }
+.changePW_ul dd .input_text { width: 200px; }
+/*修改手机*/
+.userSafeBox .findPWBox { width: auto; background-color: #E7E7E7; padding: 0; }
+.userSafeBox .findPWItem { padding-left: 15%; _padding-left: 5%; }
+.userSafeBox .findPWItem .key { width: 130px; display: inline-block; text-align: right; }
+.changeOk { padding: 0 !important; }
+/*=============================会员升级==============================*/
+.userCenterTitle .userLevel, .userCenterTitle .experience { display: inline-block; height: 0; margin-bottom: 0; padding: 0; }
+.upLevel span { padding: 0; }
+/*购买记录*/
+.buyLeveList { height: 27px; margin-top: 40px; border-bottom: 1px solid #B2B2B2; }
+.upLevel img, .vipLevelName { display: inline-block; vertical-align: middle; }
+.vipLevelName { margin-left: 20px; }
+.buyLeveList_table img { width: 40px; }
+/*=============================我的积分==============================*/
+.integral_t { text-align: center; height: 125px; line-height: 125px; }
+.integral h2, .upLevel h2 { height: 50px; font-size: 18px; color: #313131; }
+.integral p, .upLevel p { padding: 0 53px; white-space: pre-line; line-height: 1.5; text-align: justify; font-size: 12px; color: #313131; }
+/*=============================收货地址==============================*/
+.myAdd_btnCAncel { border: 1px solid #C8C8C8; background-color: #F1F1F1; color: #25499D !important; }
+.myAdd_item { padding: 25px 20px 20px 50px; background: #F1F1F1; border: 1px solid #C6C6C6; margin-top: 20px; position: relative; }
+.myAdd_item p { line-height: 1.5; color: #767676; }
+.myAdd_item b { margin-bottom: 5px; display: block; }
+.myAdd_item .btns { position: absolute; bottom: 20px; right: 20px; font-size: 12px; }
+/*编辑*/
+.myAdd_edit { padding: 25px 20px 20px; background: #FFF; }
+.myAdd_edit .fl { width: 280px; }
+.myAdd_edit .key { width: 100px; text-align: right; display: inline-block; }
+.myAdd_edit .fr .key { width: 80px; }
+.item_selectBox .key { margin-right: -4px; }
+.myAdd_edit select { width: 134px; border-color: #7E7E7E; }
+.width559 { width: 559px; }
+.setNormal { position: relative; left: -30%; }
+/*=============================收货地址==============================*/
+.advise textarea { width: 97%; _width: 95%; height: 150px; }
+/*=============================养护中心==============================*/
+.maintain .pageIndex { padding:0;}
+.maintain img {display:none;}
+/*.maintain ul { padding: 0 30px; }
+.maintain li { margin-bottom: 20px; }
+.maintain li img { float: left; }
+.maintain li .value { margin-left: 200px; }
+.maintain pre .h3 { font-size: 18px; color:#303030;}
+.maintain pre .h4 { font-size: 14px; color:#303030;}
+.maintain pre { line-height: 1.5;color:#767676;font-family:'Microsoft YaHei';white-space:pre-wrap;word-break:normal;word-wrap:break-word; }
+.maintain h3 i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #ABABAB; margin-right: 10px;text-align:justify; }
+.maintain h3 { font-size:16px;color:#272727;}*/
+/*=============================联系客服==============================*/
+.customer li { padding: 5px 90px 35px; border-bottom: 1px solid #C5C5C5; background: url(images/icon_customer_tel.png) no-repeat 30px 0; margin-bottom: 20px; }
+.customer li.email { background-image: url(images/icon_customer_email.png); }
+/*=========================取消订单弹窗======================================*/
+.cancel_content { line-height: 28px; height: 50px; }
+.cancel_content .title { float: left; height: 32px; line-height: 32px; text-align: right; width: 194px; }
+.cancel_content .title .text { float: right; }
+.cancel_content .title .not_null { color: #ff0000; float: right; height: 5px; margin: 3px; width: 5px; }
+.cancel_content .selectBox { float: left; width: 204px; height: 32px; line-height: 34px; }
+.selectBox { background: #ffffff none repeat scroll 0 0; border: 1px solid #d1d1d1; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; height: 25px; line-height: 25px; padding: 0 20px 0 5px; position: relative; float: left; width: 204px; margin: -3px 10px 0 0; position: relative; z-index: 99; }
+.cancel_content .selectBox ul { padding: 10px 0 0 10px; width: 286px; }
+.selectBox ul { background: #fff none repeat scroll 0 0; border: 1px solid #d1d1d1; box-shadow: 2px 2px 2px rgba(170, 170, 170, 0.5); display: none; left: -1px; padding: 1px; position: absolute; top: 32px; width: 148px; }
+.cancel_content .selectBox ul li { float: left; height: 18px; line-height: 18px; margin-bottom: 10px; padding: 0; width: 128px; margin-right: 10px; }
+.cancelOrderBox { left: 52%; width: 600px; }
+.selectBox .icon_userCenter { width: 11px; height: 6px; position: absolute; right: 8px; top: 15px; background-position: 0 -354px; }
+.selectBox .curr .icon_userCenter { background-position: -11px -354px; }
+/*=============================帮助中心==============================*/
+.helpCenter .userCenterBox_l { padding-top: 50px; }
+.helpCenter .userCenterNav { border: 0; padding-top: 0; margin-bottom: 0; }
+.helpCenter .userCenterNav dt { height: 45px; line-height: 45px; position: relative; cursor: pointer; font-weight: bold; }
+.helpCenter .userCenterNav .icon_triangle { position: absolute; right: 5px; top: 22px; border-color: #777 transparent transparent; }
+.helpCenter .curr .icon_triangle { border-style: dashed dashed solid; border-color: transparent transparent #777; border-width: 0 5px 5px; }
+.helpCenter .userCenterNav dd { display: none; }
+.helpCenter .curr dd { display: block; cursor: pointer; }
+.pageIndex { display: none; padding: 26px 46px; word-break: break-all; }
+.pageIndex h2 { font-size: 20px; text-align: center; height: 66px; color: #2D2D2D; }
+.pageIndex h3 { font-size: 16px; color: #2D2D2D; padding-bottom: 20px; }
+.pageIndex h4 { padding-bottom: 10px; color: #2D2D2D; line-height: 1.5; text-align: justify; }
+.pageIndex h5 { padding-bottom: 10px; color: #767676; line-height: 1.5; }
+.pageIndex img { padding-bottom: 20px; }
+.pageIndex pre {word-break:normal;word-wrap:break-word; white-space: pre-wrap; font-family: 'Microsoft YaHei'; line-height: 1.5; text-align: justify; color: #767676; padding-bottom: 10px; }
+.pageIndex pre b{ color:#303030;font-weight:normal;}
+.pageIndex pre b.h3{ font-size:16px;font-weight:bold;}
+.pageIndex strong { color:#303030;}
+.callmeImg { width:380px;height:220px;}
