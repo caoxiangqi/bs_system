@@ -194,7 +194,8 @@
       font-size: 20px;
       transform: translate(0, 0);
       -webkit-transform: translate(0, 0);
-      opacity: 1; }
+      opacity: 1; 
+      font-size:14px;}
     #me_info section:nth-child(2) {
       background: url(img/third_bg.jpg) no-repeat center;
       background-size: cover; }
