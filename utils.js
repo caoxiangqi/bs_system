@@ -138,7 +138,7 @@ var utils = (function () {
     function getCss(ele, attr) {
         var reg = val = null;
         if (flag) {
-            val = getComputedStyle(curEle)[attr];
+            val = getComputedStyle(ele)[attr];
         } else {
             if (attr == "opacity") {
                 val = ele.currentStyle['filter'];
@@ -167,7 +167,6 @@ var utils = (function () {
         }
         if (attr == "opacity") {
             ele.style.opacity = val;
-
             ele.style.filter = "alpha(opacity=" + val * 100 + ")";
             return;
         }
@@ -175,7 +174,7 @@ var utils = (function () {
         if (reg.test(attr)) {
             val += "px"
         }
-        ele.style[attr] = val;
+        ele.style.attr = val;
     }
 
     /**
