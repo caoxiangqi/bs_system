@@ -204,7 +204,7 @@ var utils = (function () {
             if (typeof arguments[2] !== 'undefined') {
                 this.setCss(curEle, argTwo, arguments[2]);
                 return;
-            } else {//ªÒ»°
+            } else {
                 return this.getCss(curEle, argTwo)
             }
         }
