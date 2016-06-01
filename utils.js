@@ -138,7 +138,7 @@ var utils = (function () {
     function getCss(curEle, attr) {
         var reg = val = null;
         if (flag) {
-            return getComputedStyle(curEle)[attr];
+            val = getComputedStyle(curEle)[attr];
         } else {
             if (attr == "opacity") {
                 val = ele.currentStyle['filter'];
@@ -147,9 +147,10 @@ var utils = (function () {
             } else {
                 val = ele.currentStyle[attr]
             }
-            reg = /^([+-]\d+(\.\d+))(px|pt|rem|em)$/i;
-            return reg.test(val) ? parseFloat(val) : val;
+
         }
+        reg = /^([+-]?\d+(\.\d+)?)(px|pt|rem|em)?$/i;
+        return reg.test(val) ? parseFloat(val) : val;
     }
 
     /**
@@ -159,18 +160,19 @@ var utils = (function () {
      * @param val
      */
     function setCss(ele, attr, val) {
-        if (attr = "float") {
+        if (attr == "float") {
             ele.style.cssFloat = val;
             ele.style.styleFloat = val;
-            return
+            return;
         }
-        if (attr = "opacity") {
-            ele.style.filter = "alpha(opacity=" + val * 100 + ")";
+        if (attr == "opacity") {
             ele.style.opacity = val;
-            return
+
+            ele.style.filter = "alpha(opacity=" + val * 100 + ")";
+            return;
         }
-        var reg = /^(width|height|left|right|bottom|top|(margin|padding)(left|bottom|right|top)?)$/i;
-        if (reg.test(val)) {
+        var reg = /(width|height|top|right|bottom|left|((margin|padding)(top|right|bottom|left)?))/
+        if (reg.test(attr)) {
             val += "px"
         }
         ele.style[attr] = val;
@@ -182,10 +184,11 @@ var utils = (function () {
      * @param objcss
      */
     function setCssS(ele, objcss) {
-        if (objcss.toString() === "[object Objcet]") {
-            for (var i in objcss) {
-                this.setCss(ele, i, objcss[i]);
-            }
+        if (objcss.toString() !== "[object Objcet]") {
+            return;
+        }
+        for (var g in objcss) {
+            this.setCss(ele, g, objcss[g]);
         }
     }
 
@@ -196,7 +199,7 @@ var utils = (function () {
      * @param v3
      * @returns {*}
      */
-    function css(ele, v2, v3) {
+    function css(ele,v2,v3) {
         if (typeof v2 !== "undefined") {
             if (typeof v3 !== "undefined") {
                 this.setCss(ele, v2, v3);
@@ -405,9 +408,9 @@ var utils = (function () {
 
 
     return {
-        prepend:prepend,  //  Insert begin element
-        insertAfter:insertAfter,  //  Insert appoint element after
-        insertBefore:insertBefore,  //  Insert appoint element before
+        prepend: prepend,  //  Insert begin element
+        insertAfter: insertAfter,  //  Insert appoint element after
+        insertBefore: insertBefore,  //  Insert appoint element before
         index: index,  // Get element indexes
         firstChild: firstChild,  // Get first element
         lastChild: lastChild,  // Get last element
