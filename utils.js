@@ -170,11 +170,11 @@ var utils = (function () {
             ele.style.filter = "alpha(opacity=" + val * 100 + ")";
             return;
         }
-        var reg = /(width|height|top|right|bottom|left|((margin|padding)(top|right|bottom|left)?))/
+        var reg = /(width|height|top|right|bottom|left|((margin|padding)(top|right|bottom|left)?))/;
         if (reg.test(attr)) {
             val += "px"
         }
-        ele.style.attr = val;
+        ele.style[attr] = val;
     }
 
     /**
@@ -198,23 +198,21 @@ var utils = (function () {
      * @param v3
      * @returns {*}
      */
-    function css(ele,v2,v3) {
-        if (typeof v2 !== "undefined") {
-            if (typeof v3 !== "undefined") {
-                this.setCss(ele, v2, v3);
+    function css(curEle) {
+        var argTwo = arguments[1];
+        if (typeof argTwo === 'string') {
+            if (typeof arguments[2] !== 'undefined') {
+                this.setCss(curEle, argTwo, arguments[2]);
                 return;
-            } else {
-                return this.getCss(ele, v2);
+            } else {//ªÒ»°
+                return this.getCss(curEle, argTwo)
             }
         }
-        v2 = v2 || 1;
-        if (v2.toString() === "[object Object]") {
-            for (var i in v2) {
-                this.setCssS(ele, i, v2[i]);
-            }
+        argTwo = argTwo || 0;
+        if (argTwo.toString() === '[object Object]') {
+            this.setCssS(curEle, argTwo)
         }
     }
-
 
     /**
      * Get childrens element or get childrens appoint element
@@ -244,7 +242,6 @@ var utils = (function () {
         }
         return a;
     }
-
 
     /**
      * Get silbing elements
