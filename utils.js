@@ -135,7 +135,7 @@ var utils = (function () {
      * @param attr
      * @returns {*}
      */
-    function getCss(curEle, attr) {
+    function getCss(ele, attr) {
         var reg = val = null;
         if (flag) {
             val = getComputedStyle(curEle)[attr];
