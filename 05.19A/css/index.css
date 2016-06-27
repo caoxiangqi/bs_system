@@ -404,7 +404,7 @@ html, body {
 }
 
 
-.ip-2-h-w div,.ip-h-q-q,.ip-2-e ul li{
+.ip-2-h-w div,.ip-3-e ul li,.ip-3-e .bor,.ip-2-e .ip-p5-q-q,.ip-h-q-q,.ip-num,.ip-2-e ul li,.ip-p-q,.ip-p{
     opacity:0;
 }
 /*#page2 .ip-2-h-w,#page2 .ip-2-h-q,#page3 .ip-2-h-w,#page3 .ip-2-h-q,#page3 .ip-2-e,#page4 .ip-2-h-w,#page4 .ip-2-h-q,#page4 .ip-3-e,#page4 .ip-3-e ul li div,#page5 .ip-2-h-w,#page5 .ip-2-h-q,.ip-2-e{
@@ -460,53 +460,53 @@ html, body {
 
 
 #page3 .ip-2-e ul li:nth-child(1){
-    -webkit-animation: bounceInLeft 1.5s .1s linear both;
-    animation: bounceInLeft 1.5s .1s linear both;
+    -webkit-animation: bounceInLeft .8s .1s linear both;
+    animation: bounceInLeft .8s .1s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(2){
-    -webkit-animation: bounceInRight 1.5s .1s linear both;
-    animation: bounceInRight  1.5s .1s linear both;
+    -webkit-animation: bounceInRight .8s .1s linear both;
+    animation: bounceInRight  .8s .1s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(3){
-    -webkit-animation: bounceInLeft 1.5s .2s linear both;
-    animation: bounceInLeft  1.5s .2s linear both;
+    -webkit-animation: bounceInLeft .8s .2s linear both;
+    animation: bounceInLeft  .8s .2s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(4){
-    -webkit-animation: bounceInRight 1.5s .2s linear both;
-    animation: bounceInRight  1.5s .2s linear both;
+    -webkit-animation: bounceInRight .8s .2s linear both;
+    animation: bounceInRight  .8s .2s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(5){
-    -webkit-animation: bounceInLeft 1.5s .3s linear both;
-    animation: bounceInLeft  1.5s .3s linear both;
+    -webkit-animation: bounceInLeft .8s .3s linear both;
+    animation: bounceInLeft  .8s .3s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(6){
-    -webkit-animation: bounceInRight 1.5s .3s linear both;
-    animation: bounceInRight 1.5s .3s linear both;
+    -webkit-animation: bounceInRight .8s .3s linear both;
+    animation: bounceInRight .8s .3s linear both;
 }
 
 #page4 .ip-3-e ul li:nth-child(1){
-    -webkit-animation: bounceInLeft 1.5s .1s linear both;
-    animation: bounceInLeft 1.5s .1s linear both;
+    -webkit-animation: bounceInLeft .8s .1s linear both;
+    animation: bounceInLeft .8s .1s linear both;
 }
 #page4 .ip-3-e ul li:nth-child(2){
-    -webkit-animation: bounceInRight 1.5s .2s linear both;
-    animation: bounceInRight  1.5s .2s linear both;
+    -webkit-animation: bounceInRight .8s .2s linear both;
+    animation: bounceInRight  .8s .2s linear both;
 }
 #page4 .ip-3-e ul li:nth-child(3){
-    -webkit-animation: bounceInLeft 1.5s .3s linear both;
-    animation: bounceInLeft  1.5s .3s linear both;
+    -webkit-animation: bounceInLeft .8s .3s linear both;
+    animation: bounceInLeft  .8s .3s linear both;
 }
 #page4 .ip-3-e ul li:nth-child(4){
-    -webkit-animation: bounceInRight 1.5s .4s linear both;
-    animation: bounceInRight  1.5s .4s linear both;
+    -webkit-animation: bounceInRight .8s .4s linear both;
+    animation: bounceInRight  .8s .4s linear both;
 }
 #page4 .ip-3-e ul li:nth-child(5){
     -webkit-animation: bounceInLeft 1.5s .5s linear both;
-    animation: bounceInLeft  1.5s .5s linear both;
+    animation: bounceInLeft  .8s .5s linear both;
 }
 #page4 .ip-3-e ul li:nth-child(6){
-    -webkit-animation: bounceInRight 1.5s .6s linear both;
-    animation: bounceInRight 1.5s .6s linear both;
+    -webkit-animation: bounceInRight .8s .6s linear both;
+    animation: bounceInRight .8s .6s linear both;
 }
 #page4 .ip-3-e .bor{
     -webkit-animation: zoomIn .5s .8s linear both;
