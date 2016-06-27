@@ -400,7 +400,7 @@ html, body {
 
 /*    ·­Ò³¶¯»­      */
 .page1 .bg div,.page2 .bg div,.page3 .bg div,.page4 .bg div,.page5 .bg div{
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 
