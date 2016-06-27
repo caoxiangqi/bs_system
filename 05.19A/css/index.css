@@ -460,28 +460,28 @@ html, body {
 
 
 #page3 .ip-2-e ul li:nth-child(1){
-    -webkit-animation: bounceInLeft 1.5s .2s linear both;
-    animation: bounceInLeft 1.5s .2s linear both;
+    -webkit-animation: bounceInLeft 1.5s .1s linear both;
+    animation: bounceInLeft 1.5s .1s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(2){
+    -webkit-animation: bounceInRight 1.5s .1s linear both;
+    animation: bounceInRight  1.5s .1s linear both;
+}
+#page3 .ip-2-e ul li:nth-child(3){
+    -webkit-animation: bounceInLeft 1.5s .2s linear both;
+    animation: bounceInLeft  1.5s .2s linear both;
+}
+#page3 .ip-2-e ul li:nth-child(4){
     -webkit-animation: bounceInRight 1.5s .2s linear both;
     animation: bounceInRight  1.5s .2s linear both;
 }
-#page3 .ip-2-e ul li:nth-child(3){
-    -webkit-animation: bounceInLeft 1.5s .4s linear both;
-    animation: bounceInLeft  1.5s .4s linear both;
-}
-#page3 .ip-2-e ul li:nth-child(4){
-    -webkit-animation: bounceInRight 1.5s .4s linear both;
-    animation: bounceInRight  1.5s .4s linear both;
-}
 #page3 .ip-2-e ul li:nth-child(5){
-    -webkit-animation: bounceInLeft 1.5s .6s linear both;
-    animation: bounceInLeft  1.5s .6s linear both;
+    -webkit-animation: bounceInLeft 1.5s .3s linear both;
+    animation: bounceInLeft  1.5s .3s linear both;
 }
 #page3 .ip-2-e ul li:nth-child(6){
-    -webkit-animation: bounceInRight 1.5s .6s linear both;
-    animation: bounceInRight 1.5s .6s linear both;
+    -webkit-animation: bounceInRight 1.5s .3s linear both;
+    animation: bounceInRight 1.5s .3s linear both;
 }
 
 #page4 .ip-3-e ul li:nth-child(1){
