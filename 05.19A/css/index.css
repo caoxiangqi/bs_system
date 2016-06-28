@@ -402,7 +402,9 @@ html, body {
 .page1 .bg div,.page2 .bg div,.page3 .bg div,.page4 .bg div,.page5 .bg div{
     /*opacity: 0;*/
 }
-
+.bg{
+    position: relative;
+}
 
 .ip-2-h-w div,.ip-3-e ul li,.ip-3-e .bor,.ip-2-e .ip-p5-q-q,.ip-h-q-q,.ip-num,.ip-2-e ul li,.ip-p-q div,.ip-p{
     opacity:0;
