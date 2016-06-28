@@ -1,4 +1,12 @@
 //解决移动端点击延迟300ms问题；
+window.onload = function(){
+    var p1 = document.getElementsByClassName("page1")[0];
+    p1.id="page1";
+    console.log("t")
+};
+
+
+
 FastClick.attach(document.body);
 
 // 适配HTML font-size
