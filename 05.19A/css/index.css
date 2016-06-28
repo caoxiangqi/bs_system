@@ -404,8 +404,11 @@ html, body {
 }
 
 
-.ip-2-h-w div,.ip-3-e ul li,.ip-3-e .bor,.ip-2-e .ip-p5-q-q,.ip-h-q-q,.ip-num,.ip-2-e ul li,.ip-p-q,.ip-p{
+.ip-2-h-w div,.ip-3-e ul li,.ip-3-e .bor,.ip-2-e .ip-p5-q-q,.ip-h-q-q,.ip-num,.ip-2-e ul li,.ip-p-q div,.ip-p{
     opacity:0;
+}
+.bg2,.bg3{
+    opacity: 1;
 }
 /*#page2 .ip-2-h-w,#page2 .ip-2-h-q,#page3 .ip-2-h-w,#page3 .ip-2-h-q,#page3 .ip-2-e,#page4 .ip-2-h-w,#page4 .ip-2-h-q,#page4 .ip-3-e,#page4 .ip-3-e ul li div,#page5 .ip-2-h-w,#page5 .ip-2-h-q,.ip-2-e{
     -webkit-animation: zoomIn  0s 0s linear both;
