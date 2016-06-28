@@ -236,7 +236,7 @@ html, body {
     width: 100%;
     bottom:0;
     top:2.3rem;
-    height:75%;
+    /*height:75%;*/
     background: rgba(20, 22, 25, 0.247059);
 }
 .ip-2-e ul {
